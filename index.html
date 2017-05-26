@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.3.1.min.css"/>
+		<script type="text/javascript" src="js/swiper.animate1.0.2.min.js" ></script>
+		<script type="text/javascript" src="js/swiper-3.3.1.min.js" ></script>
+		<script type="text/javascript" src="js/zepto.min.js" ></script>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			html,body{
+				width: 100%;
+				height: 100%;
+			}
+			#mySwiper{
+				height: 100%;
+				overflow: hidden;
+			}
+			#mySwiper .swiper-wrapper{
+				height: 100%;
+			}
+			#mySwiper .swiper-wrapper .swiper-slide:nth-child(1){
+				background: url(images/bg1.jpg) no-repeat bottom;
+				background-size:cover;
+			}
+			#mySwiper .swiper-wrapper .swiper-slide:nth-child(1) .indexStar{
+				width: 100%;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			#mySwiper .swiper-wrapper .swiper-slide:nth-child(1) .myHead{
+				width: 49%;
+				height: 29%;
+				position: absolute;
+				left: 24%;
+				top: 13%;
+				border-radius: 100%;
+				z-index: 999;
+			}
+			#mySwiper .swiper-wrapper .swiper-slide:nth-child(1) .personal{
+				position: absolute;
+				width: 95%;
+				height: 36%;
+				left: 28%;
+				top: 42%;
+			}
+			#mySwiper .swiper-wrapper .swiper-slide:nth-child(1) .flay{
+				position: absolute;
+				width: 27%;
+				height: 13%;
+				left: 50%;
+				bottom: 20%;
+			}
+			#mySwiper .swiper-wrapper .swiper-slide:nth-child(1) .border{
+				width: 83%;
+				height: 51%;
+				position: absolute;
+				left: 6%;
+				top: 0;
+			}
+			#mySwiper .swiper-wrapper .swiper-slide:nth-child(1) .name{
+				display: block;
+				color: brown;
+				font-size: 30px;
+				position: absolute;
+				left: 52%;
+				bottom: 20%;
+			}
+			@-webkit-keyframes change{
+				from{transform: rotate(0deg);}
+				to{transform: rotate(360deg);}
+			}
+			@-webkit-keyframes scal{
+				0%{transform: scale(1);}
+				50%{transform: scale(0.9);}
+				100%{transform: scale(1);}
+			}
+			#mySwiper .swiper-wrapper .swiper-slide:nth-child(2){
+				background: url(images/bg.jpg) no-repeat bottom;
+				background-size: cover;
+			}
+			#mySwiper .swiper-wrapper .swiper-slide:nth-child(2) .information{
+				display: block;
+				color: white;
+				font-size: 44px;
+				margin-left: 4%;
+				background: none;
+			}
+			#mySwiper .swiper-wrapper .swiper-slide:nth-child(2) .informationTop{
+				width: 60%;
+				height: 31%;
+				position: absolute;
+				left: 3%;
+				top: 10%;
+			
+			}
+			#mySwiper .swiper-wrapper .swiper-slide:nth-child(2) span{
+				color: black;
+				font-size: 20px;
+				display: block;
+				margin-top: 5%;
+				background: #ccc;
+				opacity: 0.7;
+				margin-left: 2%;
+			}
+			#mySwiper .swiper-wrapper .swiper-slide:nth-child(2) .informationBottom{
+				width: 60%;
+				height: 31%;
+				position: absolute;
+				left: 3%;
+				top: 43%;
+			}
+		#mySwiper .musicBtn{
+				width: 50px;
+				height: 50px;
+				position: absolute;
+				right: 10px;
+				top: 10px;
+				background: url(images/musicBtn.png) no-repeat center center;
+				background-size: contain;
+				z-index: 9999;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="mySwiper">
+			<span class="musicBtn"></span>
+			<audio src="images/music.mp3"></audio>
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="images/endBg.png" class="indexStar ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.5s"/>
+					<img src="images/qq.jpg" class="myHead ani" swiper-animate-effect="zoomInUp" swiper-animate-duration="1s"/>
+					<img src="images/bg2.png" class="personal ani" swiper-animate-effect="swing" swiper-animate-duration="1s"/>
+					<img src="images/flay.png" class="flay ani" swiper-animate-effect="zoomOutUp" swiper-animate-duration="1s"/>
+					<!--<img src="images/zhuan.png" class="border ani" swiper-animate-effect="bounceOut" swiper-animate-duration="1s"/>-->
+					<span class="name ani" swiper-animate-effect="flipInX" swiper-animate-duration="1s" swiper-animate-delay="0.5s">HELLO,你好!</span>
+				</div>
+				<div class="swiper-slide">
+					<span class="information ani" swiper-animate-effect="rotateInDownLeft" swiper-animate-duration="1s" swiper-animate-delay="0.5s">个人信息</span>
+					<div class="informationTop ani" swiper-animate-effect="rotateInDownLeft" swiper-animate-duration="1s" swiper-animate-delay="0.8s">
+						<span class="name">姓名:张佳浩</span>
+						<span class="sex">性别:男</span>
+						<span class="work">应聘:web前端</span>
+						<span class="good">优点:沟通能力强，有责任心，逻辑清晰</span>
+					</div>
+					<div class="informationBottom ani" swiper-animate-effect="rotateInDownLeft" swiper-animate-duration="1s" swiper-animate-delay="1s">
+						<span class="name">地址:浙江杭州</span>
+						<span class="sex">联系:15700064961</span>
+						<span class="emile">邮箱:15700064961@163.com</span>
+						<span class="work">爱好:研究电子产品,团队游戏，听音乐，打球</span>
+					</div>
+				</div>
+				<div class="swiper-slide" style="background: blue;"></div>
+				<div class="swiper-slide" style="background: pink;"></div>
+				<div class="swiper-slide" style="background: black;"></div>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			var indexStar=document.getElementsByClassName("indexStar")[0];
+			var myHead=document.getElementsByClassName("myHead")[0];
+			var personal=document.getElementsByClassName("personal")[0];
+			var border=document.getElementsByClassName("border")[0];
+			var musicBtn=document.getElementsByClassName("musicBtn")[0];
+			var oAudio=document.getElementsByTagName("audio")[0];
+			var isAuto=false;
+			var flag=1;
+			var mySwiper = new Swiper("#mySwiper",{
+				direction:"vertical",
+				onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+				    swiperAnimateCache(swiper); //隐藏动画元素 
+				    swiperAnimate(swiper); //初始化完成开始动画
+				},
+				onSlideChangeEnd: function(swiper){ 
+				    swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+				}
+			});
+			document.onmousedown = function(){
+				if(!isAuto){
+					isAuto=true;
+					oAudio.play();
+				}
+			}
+			musicBtn.addEventListener("tap",function(){
+				flag=-flag
+				if(flag==-1){
+					this.oAudio.pause();
+					this.style.background = "url(images/musicBtnOff.png) no-repeat center center";
+					this.style.backgroundSize = "contain";
+				}else{
+					this.oAudio.play();
+					this.style.background = "";
+				}
+			},false)
+			indexStar.addEventListener("animationend",function(){
+				this.style.animation="scal 3s 0.3s infinite forwards";
+			},false);
+			personal.addEventListener("animationend",function(){
+				this.style.animation="scal 3s infinite forwards";
+			},false);
+			/*border.addEventListener("animationend",function(){
+				this.style.animation="change 3s infinite";
+			},false);*/
+		</script>
+	</body>
+</html>
